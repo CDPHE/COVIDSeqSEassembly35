@@ -1,0 +1,5 @@
+version: 1.2
+workflows:
+   - name: COVIDSeqSEassembly35
+     subclass: WDL
+     primaryDescriptorPath: COVIDSeqSEassembly35/COVIDSeqSEassembly35.wdl
