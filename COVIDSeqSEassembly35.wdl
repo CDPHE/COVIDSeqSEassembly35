@@ -144,8 +144,8 @@ task bbduk_clean {
 
     command <<<
 
-        bbduk.sh -Xmx"8g" in1=~{fastq} out1=~{sample_id}.rmadpt.fastq.gz ref=/bbmap/resources/adapters.fa stats=~{sample_id}.adapters.stats.txt ktrim=r k=23 mink=11 hdist=1 tpe tbo
-        bbduk.sh -Xmx"8g" in1=~{sample_id}.rmadpt.fastq.gz out1=~{sample_id}_cleaned.fastq.gz outm=~{sample_id}.matched_phix.fq ref=/bbmap/resources/phix174_ill.ref.fa.gz minlength=25 k=31 hdist=1 stats=~{sample_id}.phix.stats.txt
+        bbduk.sh -Xmx"8g" in1=~{fastq} out1=~{sample_id}.rmadpt.fastq.gz ref=/bbmap/resources/adapters.fa stats=~{sample_id}.adapters.stats.txt ktrim=r k=25 mink=11 hdist=1 tpe tbo
+        bbduk.sh -Xmx"8g" in1=~{sample_id}.rmadpt.fastq.gz out1=~{sample_id}_cleaned.fastq.gz outm=~{sample_id}.matched_phix.fq ref=/bbmap/resources/phix174_ill.ref.fa.gz minlength=25 k=25 hdist=1 stats=~{sample_id}.phix.stats.txt
 
     >>>
 
